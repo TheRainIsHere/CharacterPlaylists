@@ -10,3 +10,24 @@ Given the constraints of what the course will cover and the resources I can find
 - Multiple users (maybe multiple local users, maybe hosting it for class somehow) 
 ## The Plan
 Keep it simple to keep it possible; there will only be one user. Despite that, I will still do my best to structure my logic and queries to accommodate more users should I continue this project after this class. I will work with EF Core for creating the database (as that's what is in the textbook), but admittedly I haven't looked too deep into that yet. I will be using [YouTubeMusicAPI](https://github.com/IcySnex/YouTubeMusicAPI) to grab any song-related data that's needed, so that song objects within a character can be as simple as a YouTube Music ID, tags, and notes. When displaying the list of songs under a character, a wrapper will be used on the songs to return data from the API without needing to store the whole song across multiple characters and users.
+## Website Mockups
+### Index/Home Page
+Below is where the user will find themselves when first launching the app.
+<img width="750" height="auto" alt="image" src="https://github.com/user-attachments/assets/5ade5e29-1145-47ea-afc9-5bb136a321c6" /> <br>
+The created characters will be listed, along with an image (if provided) and how many songs are in their playlist. When clicking on a character, the user will be brought to the character playlist.
+### The Playlist
+Here, the songs within a character will be listed.
+<img width="750" height="auto" alt="image" src="https://github.com/user-attachments/assets/6f13cc1a-5f29-451e-8262-c33e153402f8" /> <br>
+The user will be able to add, remove, and edit songs in this list. When adding or editing a song, the user can apply custom tags to sort and filter the playlist when viewing it from this page. This page also links to the character form.
+### Character Form
+This will be roughly what the user sees when attempting to create or edit a character.
+<img width="750" height="auto" alt="image" src="https://github.com/user-attachments/assets/6aa3711c-8244-4ef3-8297-ff255bdff762" /> <br>
+There aren't many required fields, but this allows the user a lot of freedom (especially if the character hasn't been developed thoroughly). <br>
+When editing:
+- "Editing:" will be the main header
+- The form will populate with existing information
+- The red button will say "Delete" <br>
+When creating a new character:
+- "Creating:" will be the main header
+- The secondary header will read "New Character"
+- The red button will say "Cancel"
